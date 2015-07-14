@@ -18,8 +18,7 @@ public class Math {
             int number = scanner.nextInt();
             System.out.print(primeNumber.isPrimeNumber(number));
             System.out.print(ArmstrongNumber.isArmstrongNumber(number));
-            // isArmstrongNumber(number);
-            //  System.out.print(ArmstrongNumber.isArmstrongNumber(number));
+            System.out.print(FactorialNumber.printFactorialNumber(number));
         } catch (NumberFormatException e) {
             e.printStackTrace();
         } catch (Exception e) {

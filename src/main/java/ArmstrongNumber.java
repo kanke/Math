@@ -32,10 +32,10 @@ public class ArmstrongNumber {
         }
 
         if (sum == original_number) {
-            sb.append("\nArmstrong no" + sum);
+            sb.append("\n" + sum + " Armstrong number");
             return sb.toString();
         } else {
-            sb.append("\nNot Armstrong no" + sum);
+            sb.append( "\n"+ sum + " Not Armstrong number");
             return sb.toString();
 
         }

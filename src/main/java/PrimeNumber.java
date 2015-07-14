@@ -11,8 +11,8 @@ public class PrimeNumber {
 
     public static String isPrimeNumber(int a) {
 
-
         StringBuilder sb = new StringBuilder();
+
         if (a < 0) {
             System.out.print("Please enter a number greater that zero");
         }
