@@ -33,14 +33,14 @@ public class PalindromeNumber {
 
     public static String isPalindromeNumber2(int number) {
 
-        sb.append("\nThis is the second solution :isPalindromeNumber2");
+        sb.append("\nThis is the second solution reverses the Integer and compares:isPalindromeNumber2");
         int n = number;
-        int rev = 0;
+        int reverse = 0;
         try {
 
             while (number > 0) {
-                int dig = number % 10;
-                rev = rev * 10 + dig;
+                int digit = number % 10;
+                reverse = reverse * 10 + digit;
                 number = number / 10;
             }
 
@@ -49,11 +49,11 @@ public class PalindromeNumber {
             LOGGER.error("Exception", e);
 
         }
-        if (n == rev) {
-            sb.append("\nPalindrome number " + rev);
+        if (n == reverse) {
+            sb.append("\nPalindrome number " + reverse);
             return sb.toString();
         } else {
-            sb.append("\nNot palindrome number " + rev);
+            sb.append("\nNot palindrome number " + reverse);
             return sb.toString();
         }
 
